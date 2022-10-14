@@ -87,4 +87,17 @@ def candy_game():
 candy_game()
 # Задача № 3 Создайте программу для игры в ""Крестики-нолики"".
 # Задача № 4 Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
+def task4():
+    string = 'AAAEEWWWW'
+    count = 1
+    for i in range(len(string)-1):
+        if i <= len(string):
+            if string[i] == string[i + 1]:
+             count += 1
+            else:
+                a = string[i]
+                print(count, string[i])
+                count = 1
+    print(count, string[i])
+task4()
 # Задача № 5 Дан список чисел. Создайте список, в который попадают числа, описываемые возрастающую последовательность. Порядок элементов менять нельзя.
